@@ -9,11 +9,11 @@ pipeline
 		Stage('SCM Checkout'){
 			steps{
 				git credentialsId: 'github', url: 'https://github.com/saleemnmalik/6pmwebapp'
-			}
+				 }
 			
 		
-		}
-		Stage('MVN Build'){
+			}
+		stage('MVN Build'){
 			steps{
 					
 						
