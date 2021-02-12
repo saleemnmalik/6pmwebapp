@@ -13,4 +13,10 @@ node{
         
     }
     
+    stage('Deploy Build'){
+        
+        echo "Deploy to Dev"
+        
+    }
+    
 }
