@@ -6,7 +6,7 @@ pipeline
 	}
 	
 	stages{
-		Stage('SCM Checkout'){
+		stage('SCM Checkout'){
 			steps{
 				git credentialsId: 'github', url: 'https://github.com/saleemnmalik/6pmwebapp'
 				 }
