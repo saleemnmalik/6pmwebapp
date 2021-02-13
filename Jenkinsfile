@@ -47,11 +47,7 @@ pipeline
 	
 post {
   success {
-    // One or more steps need to be included within each condition's block.
-    mail body: '''Hi Team, The app is successfully deployed.
-                Thanks,
-Saleem''',  subject: 'Deployment success', to: 'saleemnmalik@gmail.com'
-
+   echo "email"
   }
 }
 
