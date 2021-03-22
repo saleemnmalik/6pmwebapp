@@ -1,0 +1,15 @@
+---
+- hosts: all
+  become: yes
+  vars:
+     git_url: "http://github.com/saleemnmalik/malik"
+  tasks:
+     - name: Install git
+       yum:
+         name: git
+         state: present
+     - name: git clone repo
+       git:
+         repo: "{{git_url}}"
+         dest: /tmp/saleem
+
